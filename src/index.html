@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app" ng-controller="appController">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title ng-bind="webTitle"></title>
     <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-hello  world!
+
+<nav></nav>
+<tabbar></tabbar>
+
+
 
 <!--设置页面默认字体大小-->
 <script>
@@ -15,6 +19,8 @@ hello  world!
     document.getElementsByTagName('html')[0].style.fontSize = font;
 </script>
 
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>
